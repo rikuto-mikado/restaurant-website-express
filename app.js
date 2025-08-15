@@ -3,7 +3,7 @@ dotenv.config();
 
 const menuItems = require('./data/menuItems.json');
 const newsItems = require('./data/newsItems.json');
-const restaurantInfo = require('./data/restaurantInfo.json.json');
+const restaurantInfo = require('./data/restaurantInfo.json');
 
 const express = require("express");
 const path = require("path");

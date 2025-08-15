@@ -1,0 +1,11 @@
+{
+  "appetizers": [
+    {
+      "name": "Bruschetta Trio",
+      "description": "Three varieties of our signature bruschetta",
+      "price": "$12.00",
+      "image": "/images/food/bruschetta.jpg",
+      "popular": true
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+// Import variables and mixins first
+@import 'variables';
+@import 'mixins';
+
+// Import component styles
+@import 'components/header';
+@import 'components/footer';
+@import 'components/home';
+
+// General body styles
+body {
+  font-family: $font-family-secondary;
+  color: $text-color;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-primary;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

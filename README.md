@@ -90,7 +90,7 @@ restaurant-website-express/
 │   ├── _variables.scss         # Color and layout variables
 │   ├── _mixins.scss           # Reusable SASS mixins
 │   ├── _components/           # Component-specific styles
-│   └── main.scss              # Main stylesheet import
+│   └── style.scss              # Main stylesheet import
 ├── views/                      # EJS templates
 │   ├── layout.ejs             # Main layout template
 │   ├── partials/              # Reusable components
