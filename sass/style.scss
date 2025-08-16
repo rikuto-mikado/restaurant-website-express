@@ -1,11 +1,11 @@
 // Import variables and mixins first
-@import 'variables';
-@import 'mixins';
+@use 'variables' as *;
+@use 'mixins';
 
 // Import component styles
-@import 'components/header';
-@import 'components/footer';
-@import 'components/home';
+@use '_components/header';
+@use '_components/footer';
+@use '_components/home';
 
 // General body styles
 body {

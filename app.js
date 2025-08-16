@@ -32,20 +32,46 @@ app.use(express.static(path.join(__dirname, "public")));
 /* --------------------------
    Page Routing
 -------------------------- */
-const pageRoutes = [
-    {
-        path: '/',
-        template: 'pages/home',
+app.get('/', (req, res) => {
+    res.render('pages/home', {
         title: 'Home',
-        active: 'bio'
-    },
-    {
-        path: '/contact',
-        template: 'pages/contact',
+        active: 'home',
+        restaurantInfo: restaurantInfo
+    });
+});
+
+app.get('/about', (req, res) => {
+    res.render('pages/about', {
+        title: 'About Us',
+        active: 'about',
+        restaurantInfo: restaurantInfo
+    });
+});
+
+app.get('/menu', (req, res) => {
+    res.render('pages/menu', {
+        title: 'Menu',
+        active: 'menu',
+        menuItems: menuItems
+    });
+});
+
+app.get('/news', (req, res) => {
+    res.render('pages/news', {
+        title: 'News',
+        active: 'news',
+        newsItems: newsItems
+    });
+});
+
+app.get('/contact', (req, res) => {
+    res.render('pages/contact', {
         title: 'Contact',
-        active: 'contact'
-    },
-];
+        active: 'contact',
+        successMessage: null,
+        errorMessage: null
+    });
+});
 
 
 /* --------------------------
@@ -93,7 +119,7 @@ app.post("/contact", (req, res) => {
 
 
 app.use((req, res, next) => {
-    res.status(404).render('pages/404', { title: 'Page Not Found' });
+    res.status(404).render('pages/404', { title: 'Page Not Found', active: '' });
 });
 
 

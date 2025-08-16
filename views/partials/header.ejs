@@ -1,0 +1,47 @@
+<header class="restaurant-header">
+    <div class="header-container">
+        <div class="logo-section">
+            <h1 class="restaurant-name">
+                <a href="/">Noir Bistro</a>
+            </h1>
+
+            <p class="restaurant-tagline">Fine Dining Experience</p>
+
+            <nav class="main-navigation" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link <%= active === 'home' ? 'is-active' : '' %>">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/menu" class="nav-link <%= active === 'menu' ? 'is-active' : '' %>">
+                            Menu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about" class="nav-link <%= active === 'about' ? 'is-active' : '' %>">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact" class="nav-link <%= active === 'contact' ? 'is-active' : '' %>">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/news" class="nav-link <%= active === 'news' ? 'is-active' : '' %>">
+                            News
+                        </a>
+                    </li>
+                </ul>
+                <!-- Mobile menu button -->
+                 <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </nav>
+        </div>
+    </div>
+</header>
