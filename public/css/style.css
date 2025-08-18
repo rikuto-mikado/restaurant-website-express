@@ -168,6 +168,211 @@
     display: none;
   }
 }
+.restaurant-footer {
+  background-color: #111;
+  color: #fff;
+  padding: 3rem 0 1rem;
+  margin-top: auto;
+}
+.restaurant-footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* footer content */
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* footer sections */
+.footer-section .section-title {
+  color: #d4af37;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* restaurant info section */
+.restaurant-info .footer-title {
+  color: #d4af37;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.restaurant-info .footer-tagline {
+  color: #ccc;
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+.restaurant-info .footer-description {
+  color: #bbb;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* contact info section */
+.contact-info .contact-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.contact-info .contact-item .contact-label {
+  color: #d4af37;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+.contact-info .contact-item .contact-value {
+  color: #ccc;
+  line-height: 1.4;
+}
+.contact-info .contact-item .contact-value a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.contact-info .contact-item .contact-value a:hover {
+  color: #d4af37;
+}
+
+/* hours section */
+.hours-info .hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.hours-info .hours-item {
+  display: flex;
+  flex-direction: column;
+}
+.hours-info .hours-item .day {
+  color: #d4af37;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+.hours-info .hours-item .time {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* social section */
+.social-section .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.social-section .social-link {
+  display: flex;
+  align-items: center;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.social-section .social-link .social-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+.social-section .social-link .social-name {
+  font-size: 0.9rem;
+}
+.social-section .social-link:hover {
+  color: #d4af37;
+}
+.social-section .quick-links .quick-links-title {
+  color: #d4af37;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.social-section .quick-links .quick-link {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+.social-section .quick-links .quick-link:hover {
+  color: #d4af37;
+}
+
+/* footer bottom */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 1.5rem;
+}
+.footer-bottom .footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom .copyright {
+  color: #888;
+  font-size: 0.85rem;
+  margin: 0;
+}
+.footer-bottom .footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer-bottom .footer-links .footer-link {
+  color: #888;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.3s ease;
+}
+.footer-bottom .footer-links .footer-link:hover {
+  color: #d4af37;
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+  .restaurant-footer .footer-container {
+    padding: 0 1rem;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer-bottom .footer-bottom-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .footer-bottom .footer-links {
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .restaurant-footer {
+    padding: 2rem 0 1rem;
+  }
+  .footer-content {
+    gap: 1.5rem;
+  }
+  .restaurant-info .footer-title {
+    font-size: 1.5rem;
+  }
+  .social-section .social-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
 body {
   font-family: "Helvetica Neue", sans-serif;
   color: #333;
