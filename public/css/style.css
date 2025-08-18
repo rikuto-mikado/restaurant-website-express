@@ -168,6 +168,7 @@
     display: none;
   }
 }
+/* Footer Styles */
 .restaurant-footer {
   background-color: #111;
   color: #fff;
@@ -180,7 +181,7 @@
   padding: 0 2rem;
 }
 
-/* footer content */
+/* Footer Content */
 .footer-content {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -188,7 +189,7 @@
   margin-bottom: 2rem;
 }
 
-/* footer sections */
+/* Footer Sections */
 .footer-section .section-title {
   color: #d4af37;
   font-size: 1.2rem;
@@ -198,7 +199,7 @@
   letter-spacing: 1px;
 }
 
-/* restaurant info section */
+/* Restaurant Info Section */
 .restaurant-info .footer-title {
   color: #d4af37;
   font-size: 1.8rem;
@@ -219,7 +220,7 @@
   font-size: 0.95rem;
 }
 
-/* contact info section */
+/* Contact Info Section */
 .contact-info .contact-item {
   display: flex;
   flex-direction: column;
@@ -245,7 +246,7 @@
   color: #d4af37;
 }
 
-/* hours section */
+/* Hours Section */
 .hours-info .hours-list {
   display: flex;
   flex-direction: column;
@@ -266,7 +267,7 @@
   font-size: 0.9rem;
 }
 
-/* social section */
+/* Social Section */
 .social-section .social-links {
   display: flex;
   flex-direction: column;
@@ -310,7 +311,7 @@
   color: #d4af37;
 }
 
-/* footer bottom */
+/* Footer Bottom */
 .footer-bottom {
   border-top: 1px solid #333;
   padding-top: 1.5rem;
@@ -339,7 +340,7 @@
   color: #d4af37;
 }
 
-/* responsive design */
+/* Responsive Design */
 @media (max-width: 768px) {
   .restaurant-footer .footer-container {
     padding: 0 1rem;
@@ -373,6 +374,13 @@
     gap: 1rem;
   }
 }
+/* general style */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 body {
   font-family: "Helvetica Neue", sans-serif;
   color: #333;
