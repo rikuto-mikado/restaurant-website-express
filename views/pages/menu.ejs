@@ -1,0 +1,27 @@
+<section class="menu-section">
+    <div class="container">
+        <% Object.keys(menuData).forEach(category => { %>
+            <div class="menu-category">
+                <h2 class="category-title"><%= (category.charAt(0).toUpperCase() + category.slice(1)).replace('_', ' ') %></h2>
+
+                <div class="menu-items-grid">
+                    <% menuData[category].forEach(item => { %>
+                        <div class="menu-item">
+                            <div class="menu-image-placeholder">
+                                <span><%= item.name %></span>
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-name"><%= item.name %></h3>
+                                <p class="menu-item-description"><%= item.description %></p>
+                                <span class="menu-item-price"><%= item.price %></span>
+                                <% if (item.popular) { %>
+                                    <span class="popular-badge">Popular</span>
+                                <% } %>
+                            </div>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</section>

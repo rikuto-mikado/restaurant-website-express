@@ -731,6 +731,85 @@
     font-size: 2rem;
   }
 }
+.menu-section {
+  padding: 6rem 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.menu-category {
+  margin-bottom: 4rem;
+}
+
+.category-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #d4af37;
+  border-bottom: 2px solid #333;
+  padding-bottom: 1rem;
+}
+
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.menu-item {
+  background-color: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+.menu-item .menu-image-placeholder {
+  height: 200px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+}
+.menu-item .menu-item-content {
+  padding: 2rem;
+}
+.menu-item .menu-item-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #d4af37;
+}
+.menu-item .menu-item-description {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+.menu-item .menu-item-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #d4af37;
+}
+.menu-item .popular-badge {
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 0.3rem 0.8rem;
+  background-color: #d4af37;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
 body {
   font-family: "Helvetica Neue", sans-serif;
   color: #333;

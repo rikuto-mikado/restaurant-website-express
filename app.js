@@ -33,10 +33,17 @@ app.use(express.static(path.join(__dirname, "public")));
    Page Routing
 -------------------------- */
 app.get('/', (req, res) => {
+    const featuredItems = [];
+    for (const category in menuItems) {
+        const popularInCategory = menuItems[category].filter(item => item.popular);
+        featuredItems.push(...popularInCategory);
+    }
+
     res.render('pages/home', {
         title: 'Home',
         active: 'home',
-        restaurantInfo: restaurantInfo
+        restaurantInfo: restaurantInfo,
+        featuredItems: featuredItems
     });
 });
 
@@ -52,7 +59,7 @@ app.get('/menu', (req, res) => {
     res.render('pages/menu', {
         title: 'Menu',
         active: 'menu',
-        menuItems: menuItems
+        menuData: menuItems
     });
 });
 

@@ -1,11 +1,78 @@
 {
   "appetizers": [
     {
-      "name": "Bruschetta Trio",
-      "description": "Three varieties of our signature bruschetta",
-      "price": "$12.00",
-      "image": "/images/food/bruschetta.jpg",
+      "name": "Truffle Risotto Arancini",
+      "description": "Creamy truffle risotto balls, fried to a golden crisp, served with a saffron aioli.",
+      "price": "$16.00",
+      "image": "/images/food/arancini.jpg",
       "popular": true
+    },
+    {
+      "name": "Seared Scallops",
+      "description": "Pan-seared jumbo scallops with a cauliflower purée and brown butter vinaigrette.",
+      "price": "$22.00",
+      "image": "/images/food/scallops.jpg",
+      "popular": false
+    },
+    {
+      "name": "Burrata Caprese",
+      "description": "Fresh burrata, heirloom tomatoes, basil pesto, and a balsamic glaze.",
+      "price": "$15.00",
+      "image": "/images/food/burrata.jpg",
+      "popular": false
+    }
+  ],
+  "main_courses": [
+    {
+      "name": "Wagyu Beef Tenderloin",
+      "description": "8oz premium wagyu beef, potato gratin, asparagus, and a red wine reduction.",
+      "price": "$65.00",
+      "image": "/images/food/wagyu.jpg",
+      "popular": true
+    },
+    {
+      "name": "Duck Confit",
+      "description": "Slow-cooked duck leg with a cherry sauce, served over a bed of wild rice.",
+      "price": "$38.00",
+      "image": "/images/food/duck_confit.jpg",
+      "popular": false
+    },
+    {
+      "name": "Pan-Seared Salmon",
+      "description": "Crispy skin salmon with a lemon-dill sauce, quinoa, and seasonal vegetables.",
+      "price": "$34.00",
+      "image": "/images/food/salmon.jpg",
+      "popular": false
+    },
+    {
+      "name": "Lobster Ravioli",
+      "description": "Handmade ravioli filled with lobster meat, in a light tomato cream sauce.",
+      "price": "$42.00",
+      "image": "/images/food/ravioli.jpg",
+      "popular": true
+    }
+  ],
+  "desserts": [
+    {
+      "name": "Chocolate Lava Cake",
+      "description": "Decadent molten chocolate cake with a raspberry coulis and vanilla bean ice cream.",
+      "price": "$14.00",
+      "image": "/images/food/lava_cake.jpg",
+      "popular": true
+    },
+    {
+      "name": "Deconstructed Tiramisu",
+      "description": "A modern take on the classic, with mascarpone foam, coffee-soaked ladyfingers, and cocoa dust.",
+      "price": "$15.00",
+      "image": "/images/food/tiramisu.jpg",
+      "popular": false
+    },
+    {
+      "name": "Artisanal Cheese Platter",
+      "description": "A selection of three artisanal cheeses, with fig jam, nuts, and toasted baguette.",
+      "price": "$18.00",
+      "image": "/images/food/cheese_platter.jpg",
+      "popular": false
     }
   ]
 }

@@ -87,47 +87,24 @@
         <p class="section-subtitle centered">A taste of what awaits you at Noir Bistro</p>
         
         <div class="menu-preview-grid">
-            <div class="menu-item">
-                <div class="menu-image-placeholder">
-                    <span>Signature Dish 1</span>
-                </div>
-                <div class="menu-item-content">
-                    <h3 class="menu-item-name">Truffle Risotto</h3>
-                    <p class="menu-item-description">
-                        Creamy Arborio rice infused with black truffle oil, 
-                        topped with fresh shaved truffles and Parmesan.
-                    </p>
-                    <span class="menu-item-price">$32</span>
-                </div>
-            </div>
-            
-            <div class="menu-item">
-                <div class="menu-image-placeholder">
-                    <span>Signature Dish 2</span>
-                </div>
-                <div class="menu-item-content">
-                    <h3 class="menu-item-name">Wagyu Beef Tenderloin</h3>
-                    <p class="menu-item-description">
-                        Premium wagyu beef served with roasted vegetables 
-                        and our signature red wine reduction sauce.
-                    </p>
-                    <span class="menu-item-price">$65</span>
-                </div>
-            </div>
-            
-            <div class="menu-item">
-                <div class="menu-image-placeholder">
-                    <span>Signature Dish 3</span>
-                </div>
-                <div class="menu-item-content">
-                    <h3 class="menu-item-name">Chocolate Soufflé</h3>
-                    <p class="menu-item-description">
-                        Decadent dark chocolate soufflé served with 
-                        vanilla bean ice cream and berry compote.
-                    </p>
-                    <span class="menu-item-price">$18</span>
-                </div>
-            </div>
+            <% if (featuredItems && featuredItems.length > 0) { %>
+                <% featuredItems.forEach(item => { %>
+                    <div class="menu-item">
+                        <div class="menu-image-placeholder">
+                            <span><%= item.name %></span>
+                        </div>
+                        <div class="menu-item-content">
+                            <h3 class="menu-item-name"><%= item.name %></h3>
+                            <p class="menu-item-description">
+                                <%= item.description %>
+                            </p>
+                            <span class="menu-item-price"><%= item.price %></span>
+                        </div>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <p>No featured dishes available at the moment. Please check back later!</p>
+            <% } %>
         </div>
         
         <div class="menu-cta">
