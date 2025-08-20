@@ -282,7 +282,7 @@
   transition: color 0.3s ease;
 }
 .social-section .social-link i {
-  margin-right: 0.75rem;
+  margin-right: 1rem;
   font-size: 1.2rem;
 }
 .social-section .social-link .social-name {
@@ -514,7 +514,7 @@
   padding: 2rem;
 }
 .feature-card i {
-  font-size: 4rem;
+  font-size: 4.5rem;
   margin-bottom: 1.5rem;
   color: #d4af37;
 }
@@ -526,7 +526,7 @@
 }
 .feature-card .feature-description {
   line-height: 1.6;
-  color: #ccc;
+  color: #000;
 }
 
 /* section titles */
