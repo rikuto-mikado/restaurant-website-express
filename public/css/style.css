@@ -281,8 +281,8 @@
   text-decoration: none;
   transition: color 0.3s ease;
 }
-.social-section .social-link .social-icon {
-  margin-right: 0.5rem;
+.social-section .social-link i {
+  margin-right: 0.75rem;
   font-size: 1.2rem;
 }
 .social-section .social-link .social-name {
@@ -479,7 +479,7 @@
 }
 .hero-text .hero-subtitle {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 1.5rem;
   color: #d4af37;
   font-style: italic;
@@ -513,9 +513,10 @@
   text-align: center;
   padding: 2rem;
 }
-.feature-card .feature-icon {
-  font-size: 3rem;
+.feature-card i {
+  font-size: 4rem;
   margin-bottom: 1.5rem;
+  color: #d4af37;
 }
 .feature-card .feature-title {
   font-size: 1.5rem;
