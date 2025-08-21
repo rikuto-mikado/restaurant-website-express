@@ -80,35 +80,51 @@
     </div>
 </section>
 
-
 <section class="menu-preview-section">
     <div class="container">
         <h2 class="section-title centered">Featured Dishes</h2>
         <p class="section-subtitle centered">A taste of what awaits you at Noir Bistro</p>
         
-        <div class="menu-preview-grid">
-            <% if (featuredItems && featuredItems.length > 0) { %>
-                <% featuredItems.forEach(item => { %>
-                    <div class="menu-item">
-                        <div class="menu-image-placeholder">
-                            <span><%= item.name %></span>
+        <div class="menu-slider-container">
+            <div class="menu-preview-slider">
+                <% if (featuredItems && featuredItems.length > 0) { %>
+                    <% featuredItems.forEach((item, index) => { %>
+                        <div class="menu-item menu-slide <%= index === 0 ? 'active' : '' %>" data-slide="<%= index %>">
+                            <div class="menu-image-placeholder">
+                                <span><%= item.name %></span>
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-name"><%= item.name %></h3>
+                                <p class="menu-item-description">
+                                    <%= item.description %>
+                                </p>
+                                <span class="menu-item-price"><%= item.price %></span>
+                            </div>
                         </div>
-                        <div class="menu-item-content">
-                            <h3 class="menu-item-name"><%= item.name %></h3>
-                            <p class="menu-item-description">
-                                <%= item.description %>
-                            </p>
-                            <span class="menu-item-price"><%= item.price %></span>
-                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <div class="menu-slide active">
+                        <p>No featured dishes available at the moment. Please check back later!</p>
                     </div>
-                <% }); %>
-            <% } else { %>
-                <p>No featured dishes available at the moment. Please check back later!</p>
+                <% } %>
+            </div>
+
+            <div class="menu-slider-nav">
+                <button class="menu-prev" aria-label="Previous dish">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="menu-next" aria-label="Next dish">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+
+            <% if (featuredItems && featuredItems.length > 0) { %>
+                <div class="menu-indicators">
+                    <% featuredItems.forEach((item, index) => { %>
+                        <button class="menu-indicator <%= index === 0 ? 'active' : '' %>" data-slide="<%= index %>"></button>
+                    <% }); %>
+                </div>
             <% } %>
-        </div>
-        
-        <div class="menu-cta">
-            <a href="/menu" class="btn btn-primary">View Full Menu</a>
         </div>
     </div>
 </section>
