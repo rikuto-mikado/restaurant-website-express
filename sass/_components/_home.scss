@@ -233,6 +233,7 @@
     }
 }
 
+
 /* menu section */
 .menu-preview-section {
     padding: 6rem 0;
@@ -253,11 +254,11 @@
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    
+
     &:hover {
         transform: translateY(-5px);
     }
-    
+
     .menu-image-placeholder {
         height: 200px;
         background-color: #333;
@@ -267,7 +268,7 @@
         color: #666;
         font-size: 1.1rem;
     }
-    
+
     .menu-item-content {
         padding: 2rem;
     }
@@ -278,13 +279,13 @@
         margin-bottom: 1rem;
         color: #d4af37;
     }
-    
+
     .menu-item-description {
         line-height: 1.6;
         margin-bottom: 1rem;
         color: #ccc;
     }
-    
+
     .menu-item-price {
         font-size: 1.2rem;
         font-weight: 700;
@@ -308,45 +309,46 @@
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
-    
+
     .cta-title {
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
         color: #d4af37;
     }
-    
+
     .cta-description {
         font-size: 1.2rem;
         line-height: 1.6;
         margin-bottom: 2rem;
         color: #ccc;
     }
-    
+
     .cta-info {
         display: flex;
         justify-content: center;
         gap: 3rem;
         margin-bottom: 2.5rem;
     }
-    
+
     .cta-item {
         display: flex;
         flex-direction: column;
-        
+
         .cta-label {
             font-size: 0.9rem;
             color: #d4af37;
             margin-bottom: 0.5rem;
             font-weight: 600;
         }
-        
+
         .cta-value {
             font-size: 1.1rem;
             color: #fff;
         }
     }
 }
+
 
 /* Menu Section Slider Styles */
 .menu-slider-container {
@@ -452,12 +454,12 @@
         .hero-subtitle {
             font-size: 1.2rem;
         }
-        
+
         .hero-buttons {
             flex-direction: column;
             align-items: center;
             gap: 1rem;
-            
+
             .btn {
                 width: 250px;
             }
@@ -468,12 +470,12 @@
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .menu-preview-grid {
         grid-template-columns: 1fr;
     }
@@ -495,12 +497,12 @@
             flex-grow: 1;
         }
     }
-    
+
     .cta-info {
         flex-direction: column;
         gap: 1.5rem;
     }
-    
+
     .container {
         padding: 0 1rem;
     }
@@ -513,12 +515,12 @@
             font-size: 2rem;
             letter-spacing: 1px;
         }
-        
+
         .hero-subtitle {
             font-size: 1rem;
         }
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
@@ -536,9 +538,8 @@
             }
         }
     }
-    
+
     .cta-content .cta-title {
         font-size: 2rem;
     }
 }
-
