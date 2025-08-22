@@ -1,0 +1,19 @@
+<div class="news-page-wrapper">
+    <div class="container">
+        <h1 class="news-main-title">News & Events</h1>
+
+        <% if (newsItems && newsItems.length > 0) { %>
+            <div class="news-list">
+                <% newsItems.forEach(item => { %>
+                    <div class="news-item">
+                        <h2 class="news-title"><%= item.title %></h2>
+                        <p class="news-date"><%= new Date(item.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) %></p>
+                        <p class="news-content"><%= item.content %></p>
+                    </div>
+                <% }); %>
+            </div>
+        <% } else { %>
+            <p class="no-news-message">No news available at the moment. Please check back later.</p>
+        <% } %>
+    </div>
+</div>

@@ -75,6 +75,7 @@ app.get('/contact', (req, res) => {
     res.render('pages/contact', {
         title: 'Contact',
         active: 'contact',
+        restaurantInfo: restaurantInfo,
         successMessage: null,
         errorMessage: null
     });
