@@ -1,0 +1,141 @@
+// _mixins.scss
+// Mixin to define basic page title styles
+@mixin page-title-base {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #d4af37;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+// Mixin with centering options
+@mixin page-title($center: false, $border: false, $transform: false) {
+    @include page-title-base;
+    
+    @if $center {
+        text-align: center;
+    }
+    
+    @if $border {
+        border-bottom: 2px solid #333;
+        padding-bottom: 1rem;
+    }
+    
+    @if $transform {
+        text-transform: uppercase;
+    }
+}
+
+// Mixin for section titles
+@mixin section-title($size: 2.5rem) {
+    font-size: $size;
+    font-weight: 700;
+    color: #d4af37;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+// ========================================
+// Usage examples in each component file
+// ========================================
+
+// _components/_menu.scss
+.menu-section {
+    padding: 6rem 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.menu-category {
+    margin-bottom: 4rem;
+}
+
+.category-title {
+    @include page-title($border: true);
+}
+
+// _components/_contact.scss  
+.contact-section {
+    padding: 6rem 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.contact-title {
+    @include page-title($center: true);
+}
+
+// _components/_news.scss
+.news-page-wrapper {
+    background-color: #000;
+    color: #fff;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.news-main-title {
+    @include page-title($center: true, $transform: true);
+}
+
+// ========================================
+// Alternative: Common class approach
+// ========================================
+
+// Use common class names across pages
+.page-title {
+    @include page-title-base;
+    
+    &--center {
+        text-align: center;
+    }
+    
+    &--border {
+        border-bottom: 2px solid #333;
+        padding-bottom: 1rem;
+    }
+    
+    &--uppercase {
+        text-transform: uppercase;
+    }
+}
+
+// ========================================
+// Unified section containers
+// ========================================
+
+// Unify main sections across pages
+@mixin page-section {
+    padding: 6rem 0;
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        
+        @media (max-width: 768px) {
+            padding: 0 1rem;
+        }
+    }
+}
+
+// Usage examples
+.menu-section {
+    @include page-section;
+    background-color: #000;
+    color: #fff;
+}
+
+.contact-section {
+    @include page-section;
+    background-color: #000;
+    color: #fff;
+}
+
+.news-page-wrapper {
+    @include page-section;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}

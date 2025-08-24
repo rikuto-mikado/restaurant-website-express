@@ -2,7 +2,7 @@
     <div class="container">
         <% Object.keys(menuData).forEach(category => { %>
             <div class="menu-category">
-                <h2 class="category-title"><%= (category.charAt(0).toUpperCase() + category.slice(1)).replace('_', ' ') %></h2>
+                <h2 class="page-title page-title--border"><%= (category.charAt(0).toUpperCase() + category.slice(1)).replace('_', ' ') %></h2>
 
                 <div class="menu-items-grid">
                     <% menuData[category].forEach(item => { %>
