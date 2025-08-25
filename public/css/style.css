@@ -1001,6 +1001,11 @@
     font-size: 2rem;
   }
 }
+.about-section {
+  padding: 6rem 0 2rem 0;
+  background-color: #000;
+}
+
 .menu-section {
   padding: 6rem 0;
   background-color: #000;
